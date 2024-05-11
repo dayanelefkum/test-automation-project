@@ -8,7 +8,7 @@ module.exports = defineConfig({
       on('file:preprocessor', cucumber());
     },
     //specPattern: "cypress/e2e-tests/**/*.cy.js"
-    specPattern: "cypress/e2e-tests/*.feature"
+    specPattern: ["cypress/e2e-tests/*.feature", "cypress/api-tests/*"]
   },
   reporter: 'mochawesome',
   chromeWebSecurity: false,
